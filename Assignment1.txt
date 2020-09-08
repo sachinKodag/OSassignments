@@ -1,0 +1,108 @@
+1) 
+a) man date
+b) man cal
+c) man bc
+d) man echo
+e) man who 
+f) man whoami
+g) man logname
+h) man uname
+i) man seq
+j) man clear
+
+2)
+A) mkdir a b c
+cd a
+cat > a.txt
+cd ..
+cd b
+cat > b.txt
+cd ..
+cd c
+cat > c.txt
+cp -r c a
+B) mv b/ c/
+C) mv a CDAC
+
+3)
+A) grep 's' file1.txt file2.txt file3.txt file4.txt file5.txt
+
+cat file1.txt file2.txt file3.txt file4.txt file5.txt
+
+c) touch 1 2 3 4 5
+
+d) rm -r c CDAC
+
+5)
+a) ls -l q3
+
+b) sort file1.txt
+sort -r file1.txt
+
+c) mkdir .hidden
+cat > sub
+ls -a
+
+d) touch -d "1 hour ago" sample
+
+e) ls -r
+
+f) ls -l
+
+g) ls -ld
+
+
+1)mkdir sachin 
+touch a.txt b.txt c.txt dtxt
+chmod u-rwx sachin
+a)chmod u+rw- sach
+b)chmod +r--
+c) chmod +x
+
+2)chmod +x sachin
+3)chmod -wx sachin	
+4)echo * sachin	
+5)echo * /etc/
+6)find /etc -type f -name "*.conf"
+7)echo 'helloo' >> a.txt
+
+1)
+
+mkdir a
+cd /home/sachin/a/
+touch a.txt 
+touch .hidden.txt
+a.
+mkdir b
+cd /home/sachin/a/b
+touch b.txt 
+touch .hidden1.txt
+b.mkdir c
+touch c.txt 
+touch .hidden2.txt
+c. cp -r  /home/sachin/a/b/c /home/sachin/a
+d.cp -r /home/sachin/a/a.txt /home/sachin/a/b
+ cp -r /home/sachin/a/c/ /home/sachin/a/b
+
+2)
+chmod a=r /home/sachin/a/b/c
+
+3)permission denied
+4)mkdir data
+5) chmod +rw /home/sachin/a/b
+6)mkdir data2
+7)touch data.txt
+8)mv /home/sachin/a/b
+9)mv /home/sachia/b/c /home/sachin/a/b/copied_dir
+10)ls
+11)permission denied for hidden file,c.txt file
+12)mv /home/sachin/a/b/data/ /home/sachin/a
+13)sudo chmod
+14)chmod o+rwx /home/sachin/a
+15)mkdir sample
+16)mkdir x
+17)mv  /home/sachin/a/b/x/ /home/sachin/a
+18)mkdir movies
+21)chmod a=rwx /home/sachin/a
+25)rm b.txt
+
