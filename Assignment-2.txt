@@ -1,0 +1,153 @@
+1) 
+for((i=1;i<=10;i++))                        {                                          mkdir a$i                                   }
+
+2)
+==>     do
+        echo '1.Find length'
+        echo '2.Copying string'
+        echo '3.Concate of string'
+        echo '4.compare to sring'
+        echo '5.Reverse string'
+		read str1
+		read option
+		case $option in
+        1) echo ${#str1}
+                ;;
+
+        2) str2=$str1
+        echo $str2
+          ;;
+        3)str2="sachin"
+                echo $str1$str2
+                ;;
+        4) str2="kodag"
+        if [ $str1 == $str2 ]
+        then
+          echo "Equal"
+        else
+            echo "Not equal"
+        fi
+            ;;
+        5) echo $str1 | rev
+                ;;
+
+3)
+for((i=1;i<10;i++))
+do
+  mv a$i abbbb$i
+done
+
+4) cat > 4.sh
+echo $HOME                                  echo $PATH                                  echo $SHELL                                 echo $HISTORY                               echo $LOGNAME                               echo $TERM  
+
+5)
+ls -la | cut -b 1-10
+ls -la | cut -c 1-10
+
+6)
+ls -l | awk '{ print $1 }'
+
+7) find . -type f -size +5k 
+
+
+
+=================================
+1)
+echo "Enter a year"                         read year                                   if (( ($year%4 == 0) && ($year%400 == 0) && ($year%100 == 0) )); then                   echo "Leap Year"                            else                                        echo "Not a leap Year"                      fi  
+
+
+2)
+ans=>   echo 'Enter the no of Day : '
+	read day
+
+	if [ $day == 1 ]
+	then
+		echo 'Monday'
+	elif [ $day == 2 ]
+	then
+		echo 'Tuesday'
+	elif [ $day == 3 ]
+	then
+		echo 'Wednesday'
+	elif [ $day == 4 ]
+	then
+		echo 'Thrusaday'
+	elif [ $day == 5 ]
+	then
+		echo 'Friday'
+	elif [ $day == 6 ]
+	then
+		echo 'Saturday'
+	elif [ $day == 7 ]
+	then
+		echo 'Sunday'
+	else
+		echo 'Invalid Day'
+	fi
+
+3) echo 'Enter num1 : '
+	read num1
+	echo 'Enter num2 : '
+	read num2
+	echo 'Enter num3 : '
+	read num3
+
+	if (( num1 > num2 && num1 > num3 ))
+	then
+		echo $num1
+	elif (( num2 > num1 && num2 > num3 ))
+	then
+		echo $num2
+	else
+		echo $num3
+	fi
+
+4)
+ans=>   echo 'Enter a number : '
+	read num
+
+	if (( num%2 == 0 ))
+	then 
+		echo $num 'is Even.'
+	else
+		echo $num 'is Odd.'
+	fi
+
+5)
+ans=>   echo 'Enter num1 : '
+	read num1
+	echo 'Enter num2 : '
+	read num2
+	echo 'Enter num3 : '
+	read num3
+
+	(( avg = (( $num1+$num2+$num3 ))/3 ))
+	echo 'Average : '$avg
+
+8) 
+ans=>   echo 'Enter a string : '
+	read str
+	rev=""
+	len=${#str}
+	for (( i=$len; i>0; i-- ))
+	do
+		temp=$(expr $str | cut -c                 $i)
+		rev=$rev$temp
+	done
+
+	echo $rev  
+
+10)
+Ans=>   echo 'Enter a number : '
+	read num
+	n=$num
+	sum=0
+	rem=0
+	while (( $n > 0 ))
+	do
+		rem=`expr $n % 10`
+		sum=`expr $sum \* 10`
+		sum=`expr $sum + $rem`
+		n=`expr $n / 10`
+	done
+	echo 'Reverse : ' $sum
